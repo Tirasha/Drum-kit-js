@@ -1,0 +1,96 @@
+.w {
+  background-image: url("images/crash.png");
+}
+
+.a {
+  background-image: url("images/kick.png");
+}
+
+.s {
+  background-image: url("images/snare.png");
+}
+
+.d {
+  background-image: url("images/tom1.png");
+}
+
+.j {
+  background-image: url("images/tom2.png");
+}
+
+.k {
+  background-image: url("images/tom3.png");
+}
+
+.l {
+  background-image: url("images/tom4.png");
+}
+
+
+
+body {
+  background: linear-gradient(to right, #000428, #004e92);
+  font-family: 'Arvo', serif;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1#title {
+  font-size: 4rem;
+  margin-top: 3rem;
+  text-shadow: 2px 2px 20px #0ff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00f2ff, 0 0 30px #00f2ff;
+  }
+}
+
+.set {
+  margin-top: 3rem;
+}
+
+.drum {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.drum:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #0ff;
+}
+
+.pressed {
+  transform: scale(0.9);
+  box-shadow: 0 0 15px #ff0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #bbb;
+  text-shadow: 1px 1px 10px #000;
+}
